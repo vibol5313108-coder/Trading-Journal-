@@ -825,7 +825,8 @@ export function TradeDrawerForm({
                       required
                       label="Quantity"
                       placeholder="Enter quantity"
-                      min={1}
+                      min={0.01}
+                      precision={2}
                       value={entry.quantity}
                       onChange={(value) => updateEntryPoint(entry.id, 'quantity', value || 0)}
                       mb="xs"
